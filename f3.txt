@@ -1,0 +1,8 @@
+This tool rearranges the order of lines in the given textual data. It uses the Knut
+h method to do it, aka the Fisher and Yates order permutation algorithm. The behavior of the algorithm
+changes based on how many lines are shuffled at the same time. By default, it takes every single line in turn
+(1, 2, 3, …, n), generates a random number from 1 to n for it, which is the new position, and moves the line to
+this new place. It can also take several lines at once and move them together without splitting them apart. For example, 
+if you enter the number 2 in the group size option, it will glue the 1st and 2nd lines together and move them together to
+a new position, then 
+it will take the 3rd and 4th lines together, then the 5th and 6th, and so on. 
